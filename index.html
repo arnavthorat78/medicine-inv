@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="icon" href="./icon.png" /> -->
+    <link rel="icon" href="icon.png" />
 
     <!-- Install Bootstrap -->
     <link
@@ -18,6 +18,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Link manifest for PWA -->
+    <link rel="manifest" href="manifest.json" />
+
     <title>Medicine Inventory</title>
   </head>
   <body class="m-3">
@@ -25,6 +28,13 @@
     <p class="text-secondary fs-4 pb-2">
       Keep an inventory of all your stored medicine, including its information!
     </p>
+
+    <!-- Service worker for PWA -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
 
     <script src="src/index.js"></script>
   </body>
