@@ -29,8 +29,8 @@
       Keep an inventory of all your stored medicine, including its information!
     </p>
 
-    <button type="button" class="btn btn-danger mb-3 calculate">Log in</button>
-    <button type="button" class="btn btn-warning mb-3 calculate">Sign up</button>
+    <button type="button" class="btn btn-danger mb-3 log-in">Log in</button>
+    <button type="button" class="btn btn-warning mb-3 sign-up">Sign up</button>
 
     <hr />
 
@@ -48,16 +48,24 @@
           <th scope="row">Panadol</th>
           <td>12</td>
           <td>4/6/2030</td>
-          <td></td>
+          <td>
+            <button class="btn btn-sm btn-outline-info ms-2 edit-medicine">Edit</button>
+            <button class="btn btn-sm btn-outline-danger ms-2 remove-medicine">Remove</button>
+          </td>
         </tr>
         <tr>
           <th scope="row">Nurofen</th>
           <td>2</td>
           <td>4/6/2024</td>
-          <td></td>
+          <td>
+            <button class="btn btn-sm btn-outline-info ms-2 edit-medicine">Edit</button>
+            <button class="btn btn-sm btn-outline-danger ms-2 remove-medicine">Remove</button>
+          </td>
         </tr>
       </tbody>
     </table>
+
+    <button type="button" class="btn btn-success mb-3 add-medicine">Add</button>
 
     <!-- Service worker for PWA -->
     <script>
