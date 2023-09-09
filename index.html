@@ -80,25 +80,7 @@
       crossorigin="anonymous"
     ></script> -->
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyAKJQGzVJrLgS4q0dUTVXQMjIkIyS1g7mw",
-        authDomain: "medicine-inventory-a9853.firebaseapp.com",
-        projectId: "medicine-inventory-a9853",
-        storageBucket: "medicine-inventory-a9853.appspot.com",
-        messagingSenderId: "479781032055",
-        appId: "1:479781032055:web:62b1d1f714e06967733672",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-    </script>
+    <!-- <script type="module"></script> -->
 
     <!-- Service worker for PWA -->
     <script>
@@ -107,6 +89,6 @@
       }
     </script>
 
-    <script src="src/index.js"></script>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
