@@ -41,6 +41,7 @@
           <th scope="col"><u>Amount</u></th>
           <th scope="col"><u>Expiry</u></th>
           <th scope="col"><u>Actions</u></th>
+          <th scope="col"><u>(ID)</u></th>
         </tr>
       </thead>
       <tbody class="table-inv">
@@ -52,6 +53,9 @@
             <button class="btn btn-sm btn-outline-info ms-2 edit-medicine">Edit</button>
             <button class="btn btn-sm btn-outline-danger ms-2 remove-medicine">Remove</button>
           </td>
+          <td>
+            <span class="text-sm text-muted">Hi</span>
+          </td>
         </tr>
         <tr>
           <th scope="row">Nurofen</th>
@@ -61,11 +65,40 @@
             <button class="btn btn-sm btn-outline-info ms-2 edit-medicine">Edit</button>
             <button class="btn btn-sm btn-outline-danger ms-2 remove-medicine">Remove</button>
           </td>
+          <td>
+            <span class="text-sm text-muted">Hi</span>
+          </td>
         </tr>
       </tbody>
     </table>
 
     <button type="button" class="btn btn-success mb-3 add-medicine">Add</button>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAKJQGzVJrLgS4q0dUTVXQMjIkIyS1g7mw",
+        authDomain: "medicine-inventory-a9853.firebaseapp.com",
+        projectId: "medicine-inventory-a9853",
+        storageBucket: "medicine-inventory-a9853.appspot.com",
+        messagingSenderId: "479781032055",
+        appId: "1:479781032055:web:62b1d1f714e06967733672",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
 
     <!-- Service worker for PWA -->
     <script>
